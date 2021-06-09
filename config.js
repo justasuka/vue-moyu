@@ -1,0 +1,30 @@
+let config={
+    appName:'/net',
+    resPre:'http://192.168.2.3:8088/imgs_thumb',
+    imgPre:'http://192.168.2.3',
+    skin:'teal',
+    isDev:false,
+    vaptchaId:'5de798b3e62d2b442088be96',//vaptcha的id
+    officePre:'https://view.officeapps.live.com/op/view.aspx'
+};
+if(location.hostname=='192.168.2.9'){//测试环境
+    Object.assign(config,{
+        appName:'/net',
+        resPre:'http://120.202.180.67:9100/fileApi/file',
+        skin:'teal',
+        isDev:true,
+        vaptchaId:'5de793ede62d2b442088be8f',//vaptcha的id
+        officePre:'https://view.officeapps.live.com/op/view.aspx'
+    })
+}
+if(location.hostname=='192.168.2.196'){//测试环境
+    Object.assign(config,{
+        appName:'/net',
+        resPre:'http://120.202.180.67:9100/fileApi/file',
+        skin:'teal',
+        isDev:true,
+        vaptchaId:'5de793ede62d2b442088be8f',//vaptcha的id
+        officePre:'https://view.officeapps.live.com/op/view.aspx'
+    })
+}
+export default config;

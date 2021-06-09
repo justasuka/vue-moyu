@@ -1,0 +1,183 @@
+$editColor:#4dbd73;
+$lookColor:#f79d10;
+$deleteColor:#fe6a66;
+$addColor:#7DAEFC;
+/*分页样式*/
+.el-pagination{
+  overflow: hidden;
+  text-align: right!important;
+  padding: 0 1%;
+  >span:first-child{
+    float: left;
+  }
+  >span:first-child+span{
+    float: left;
+  }
+}
+/*搜索盒子*/
+.search-box{
+  display: flex;
+  width:98%;
+  margin: 20px auto 0 auto;
+  justify-content: space-between;
+
+  >form:first-child{
+    flex:1;
+  }
+  >form:first-child+div{
+    >.search-box-add{
+      span{
+        margin-left: 3px;
+      }
+      background:$addColor;
+      color: white;
+    }
+
+  }
+}
+/*表格里的按钮*/
+.table-look{
+  color:$lookColor;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  &.disabled{
+    color: #fef8ef;
+  }
+  +a{
+    margin-left: 10px;
+  }
+}
+.table-edit{
+  color:$editColor;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  &.disabled{
+    color:#f0faf4;
+  }
+  +a{
+    margin-left: 10px;
+  }
+}
+.table-delete{
+  color:$deleteColor;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer;
+  &.disabled{
+    color: #ffb3a2;
+  }
+  +a{
+    margin-left: 10px;
+  }
+}
+/*表格样式*/
+.table-ui{
+  width:98%;
+  margin: 0 auto;
+  border-top: 1px solid #ebeef5;
+  .has-gutter{
+    font-weight: bold;
+    color: #000;
+  }
+}
+.el-table th > .cell {
+  font-weight: bold;
+  color: #000;
+}
+
+/*厂商新建按钮*/
+.cs{
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.test-div {
+  width: 98%;
+  min-height: 60px;
+  line-height: 30px;
+  max-height: 300px;
+  _height: 60px;
+  margin: 0 auto;
+  padding: 10px;
+  outline: 0;
+  border: 1px solid #a0b3d6;
+  border-radius: 4px;
+  font-size: 12px;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  overflow-y: auto;
+  _overflow-y: visible;
+  -webkit-user-modify: read-write-plaintext-only;
+}
+/*********************************************************
+ * 全局类
+ *********************************************************/
+.margin-40-60-0 {
+  margin: 20px 0px 0px 20px;
+  padding-bottom: 40px;
+}
+.columnItem{
+  margin-top: -20px;
+  .el-form-item__content{
+    border-left: 1px dashed #409eff;
+    padding-left: 10px;
+  }
+  .el-textarea__inner{
+    min-height: 300px;
+  }
+}
+.el-form-item {
+  margin-bottom: 8px;
+}
+.el-form-item__error {
+  color: #F56C6C;
+  font-size: 12px;
+  line-height: 1;
+  padding-top: 0px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+@font-face {
+  font-family: 'ds-digitalnormal';
+  src: url('assets/fonts/ds-digi-webfont.woff2') format('woff2'),
+  url('assets/fonts/ds-digi-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'ds-digitalbold';
+  src: url('assets/fonts/ds-digib-webfont.woff2') format('woff2'),
+  url('assets/fonts/ds-digib-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'ds-digitalitalic';
+  src: url('assets/fonts/ds-digii-webfont.woff2') format('woff2'),
+  url('assets/fonts/ds-digii-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'ds-digitalbold_italic';
+  src: url('assets/fonts/ds-digit-webfont.woff2') format('woff2'),
+  url('assets/fonts/ds-digit-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+.margin-10-10-0 {
+  margin: 10px 10px 0px 10px;
+  padding-bottom: 40px;
+}
+.left{
+  width: 20%;float: left;
+}
+.right{
+  width: 79%;float: left;margin-left: 10px;
+}

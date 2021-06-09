@@ -1,0 +1,121 @@
+/* 改变主题色变量 */
+
+$--color-primary: #7DAEFC;
+
+/* 改变 icon 字体路径变量，必需 */
+
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+@import "~element-ui/packages/theme-chalk/src/index";
+@import "skin";
+.upsertForm .el-input {
+    width: 200px;
+}
+
+.fa {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+// 按钮字体大小
+.el-button {
+    font-size: 14px !important;
+}
+
+
+/*图片上传start*/
+
+.el-uploader .el-upload {
+    border: 1px dashed #d9d9d9;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.el-uploader .el-upload:hover {
+    border-color: #409EFF;
+}
+
+i.el-uploader-icon {
+    font-size: 28px;
+    color: #8c939d;
+    width: 178px;
+    height: 178px;
+    line-height: 178px;
+    text-align: center;
+}
+
+.uploader-img {
+    width: 178px;
+    height: 178px;
+    display: block;
+}
+
+
+/*图片上传end*/
+
+
+/*浮动布局,辅助类*/
+
+.float-row>* {
+    float: left;
+}
+
+.float-row:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+// elementUI的表格冒泡的 tooltip设置宽度
+.el-tooltip__popper{
+    max-width: 70% !important;
+    line-height: 180%;
+}
+.table-edit {
+    // color: $editColor;
+    color: #4DBD73;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &.disabled {
+        color: #f0faf4;
+    }
+
+    +a {
+        margin-left: 20px;
+    }
+}
+
+.table-delete {
+    // color: $deleteColor;
+    color: #4DBD73;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &.disabled {
+        color: #ffb3a2;
+    }
+
+    +a {
+        margin-left: 20px;
+    }
+}
+
+.table-modify {
+    // color: #3BC1C4;
+    color: #4DBD73;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+
+    &.disabled {
+        color: #ffb3a2;
+    }
+
+    +a {
+        margin-left: 20px;
+    }
+}
+

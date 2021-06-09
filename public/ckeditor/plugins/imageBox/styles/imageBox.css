@@ -1,0 +1,123 @@
+.image-box-head{
+    border-bottom: 1px solid #dddddd;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+.image-box-head>.select-file{
+    background-color: #029ef3;
+    width:80px;
+    height: 30px;
+    line-height: 30px;
+    cursor: pointer;
+    text-align: center;
+    border-radius: 3px;
+}
+.image-box-head>.select-file>span{
+    color:white;
+    cursor: pointer;
+}
+.image-box-head>.select-file>input[type=file]{
+    width:100%;
+    height: 100%;
+    outline: none;
+    cursor: pointer;
+    display: none;
+}
+
+/*列表*/
+.image-box-body{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    height: 480px;
+    overflow: auto;
+}
+
+.image-box-body>li{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #dddddd;
+    margin-left: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: relative;
+}
+.image-box-body>li.uploading{
+    background-color: #dddddd;
+}
+.image-box-body>li.uploading>img{
+    display: none;
+}
+.image-box-body>li.uploading>.progress{
+    display: block;
+}
+.image-box-body>li>img{
+    max-width: 100%;
+    max-height:100%;
+    display: inline-block;
+    vertical-align: middle;
+    animation: shadeIn 0.8s;
+}
+.image-box-body>li>.remove{
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    color:white;
+    background-color: #ff5b3d;
+    line-height: 22px;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 50%;
+    cursor: pointer;
+    top:-10px;
+    right: -10px;
+    display: none;
+
+}
+.image-box-body>li:hover>.remove{
+    display: block;
+}
+.image-box-body>li.uploading:hover>.remove{
+    display: none;
+}
+
+.image-box-body>li>.progress{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+    height: 6px;
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden;
+    display: none;
+}
+.image-box-body>li>.progress>.indicator{
+    background-color: #029ef3;
+    height: 100%;
+}
+@keyframes shadeIn {
+    0%{
+        opacity: 0.1;
+    }
+    25%{
+        opacity: 0.25;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    75%{
+        opacity: 0.75;
+    }
+    100%{
+        opacity: 1;
+    }
+}
